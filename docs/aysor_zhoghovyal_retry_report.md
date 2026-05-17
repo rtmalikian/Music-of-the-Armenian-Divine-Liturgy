@@ -2,6 +2,8 @@
 
 Generated after the seven-sheet `aysor_zhoghovyal` batch produced only 14.0 seconds / 87 note-on events and failed musical sanity.
 
+Important correction: the contents-derived score index places `Aysor zhoghovyal` at primary score page 17, which maps to PDF sheet 71. Therefore the retry of PDF sheets 76-82 is not a complete corrected Aysor transcription. It is a misaligned late-Aysor/following-section recovery batch that still contains useful raw OMR material for manual review.
+
 The retry split PDF sheets 76-82 into one-sheet Audiveris jobs, then converted each MusicXML export to a one-track organ MIDI file.
 
 | PDF sheet | MusicXML export | Organ MIDI | Duration | Note-ons | Review report | Assessment |
@@ -15,4 +17,3 @@ The retry split PDF sheets 76-82 into one-sheet Audiveris jobs, then converted e
 | 82 | `omr/aysor_zhoghovyal_sheet82/armenianmusic-candidate.mxl` | `midi/aysor_zhoghovyal_sheet82_organ.mid` | 14.00s | 87 | `docs/omr_review_report_aysor_zhoghovyal_sheet82.md` | Structurally valid but likely incomplete. |
 
 All seven retry MIDI files pass the structural one-track organ MIDI validator. That does not make them service-ready: the short durations, `.mvtnull.mxl` exports, and Audiveris warnings mean the section still needs manual correction against the PDF score or a better source.
-

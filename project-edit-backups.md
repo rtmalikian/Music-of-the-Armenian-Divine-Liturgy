@@ -129,3 +129,14 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `docs/completion_audit.md` to `backups/completion_audit.md.20260517_aysor_retry_backup` before updating the remaining gaps.
 - Backed up `sources/section_manifest.json` to `backups/section_manifest.json.20260517_aysor_retry_backup` before adding retry context to the Aysor zhoghovyal manifest entry.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_aysor_retry_backup` before logging Aysor retry backup entries.
+
+## 2026-05-17 Contents-Derived Score Index
+
+- Backed up `README.md` to `backups/README.md.20260517_score_index_backup` before documenting the score index.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_score_index_backup` before recording the index verification.
+- Backed up `docs/completion_audit.md` to `backups/completion_audit.md.20260517_score_index_backup` before updating remaining gaps.
+- Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_score_index_backup` before logging the index creation.
+- Backed up `sources/section_manifest.json` to `backups/section_manifest.json.20260517_score_index_backup` before marking the Aysor batch as misaligned.
+- Backed up `docs/aysor_zhoghovyal_retry_report.md` to `backups/aysor_zhoghovyal_retry_report.md.20260517_score_index_backup` before adding the misalignment correction.
+- Backed up `docs/section_status_report.md` to `backups/section_status_report.md.20260517_score_index_backup` before checking whether section status needed regeneration.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_score_index_backup` before logging score-index backup entries.

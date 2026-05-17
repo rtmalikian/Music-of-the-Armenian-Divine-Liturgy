@@ -108,6 +108,8 @@ Run a known section from `sources/section_manifest.json`:
 
 Each manifest entry stores title, source page range, PDF sheet range, tempo, meter, mode/key, voicing, and validation status. Unknown musical metadata is intentionally marked `unverified` until it is checked against the score during MusicXML/MIDI correction.
 
+The contents-derived full-score index is in `sources/score_index.json` and rendered as `docs/score_index.md`. Use this index before starting new OMR batches: primary score page 1 corresponds to PDF sheet 55, so add 54 to a primary score page to get the Audiveris sheet number. Some chants have multiple listed score starts, so visual review is still required before assuming a continuous range.
+
 The first mapped sections have been batch-exported locally:
 
 - `khorurt_khorin`: `omr/khorurt_khorin/armenianmusic-candidate.mxl`, `midi/khorurt_khorin_organ.mid`, `docs/omr_review_report_khorurt_khorin.md`
@@ -115,7 +117,7 @@ The first mapped sections have been batch-exported locally:
 - `barekhosutyamp`: `omr/barekhosutyamp/armenianmusic-candidate.mvtnull.mxl`, `midi/barekhosutyamp_organ.mid`, `docs/omr_review_report_barekhosutyamp.md`
 - `aysor_zhoghovyal`: high-risk/failed musical sanity; `midi/aysor_zhoghovyal_organ.mid` is structurally valid but too short for the inferred seven-page range.
 
-`aysor_zhoghovyal` was retried as one-sheet jobs for PDF sheets 76-82. The retry produced one-track organ MIDI files for every sheet, but the results remain raw and uneven: sheets 76 and 78 are the strongest recoveries, while sheets 77 and 81 are too sparse to treat as usable transcriptions. See `docs/aysor_zhoghovyal_retry_report.md`.
+The original `aysor_zhoghovyal` attempt was based on an inferred range. The table of contents shows that `Aysor zhoghovyal` starts at primary score page 17 / PDF sheet 71, so the sheets 76-82 retry is now documented as a misaligned late-Aysor/following-section recovery rather than a corrected Aysor transcription. See `docs/aysor_zhoghovyal_retry_report.md`.
 
 The generated MIDI files are structurally valid but not service-ready until the review checklists are corrected against the score.
 
