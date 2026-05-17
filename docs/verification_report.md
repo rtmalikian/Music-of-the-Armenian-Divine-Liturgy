@@ -25,7 +25,7 @@ Date: 2026-05-17
 - Downloaded official Sacred Music Council-linked local-only excerpt score PDFs into ignored `sources/` for quality comparison and workflow testing.
 - Verified `sources/hrashapar.pdf` and `sources/vor-uzshnorhus.pdf` are MuseScore vector PDFs with no embedded raster page images, making them stronger OMR candidates than the scanned `sources/unduryalt.pdf`.
 - Generated `midi/test_organ_excerpt.mid` as a single-track proof-of-concept MIDI file.
-- Verified MIDI port listing outside the sandbox. Available ports at verification time: `Akai Network - DAW Control`, `Akai Network - MIDI`.
+- Verified MIDI port listing outside the sandbox. Available Fantom ports at final verification time: `FANTOM-6 7 8`, `FANTOM-6 7 8 DAW CTRL`, `FANTOM-6 7 8 MIDI OUT 1`, `FANTOM-6 7 8 MIDI OUT 2`.
 - Identified Armenian Sacred Music Project as a full-liturgy candidate lead, but did not promote it as the production source because it is outside the original official source constraint and needs rights/access review.
 - Added `tools/audit_score_sources.py` and `sources/source_candidates.json` to prevent excerpt/test PDFs from being promoted as production OMR inputs.
 - Downloaded and inspected `sources/armenianmusic-candidate.pdf`, a 420-page full Yegmalian `Chants of the Divine Liturgy of the Armenian Apostolic Church` PDF. It is now the selected local-only full-score candidate.
@@ -54,6 +54,9 @@ Date: 2026-05-17
 - Verified the wrapper on sheet 55 of the full Yegmalian candidate outside the sandbox.
   - Output: `midi/yegmalian_full_page55_wrapper_test_organ.mid`
   - MIDI check: 1 track, 14.75 seconds.
+- Verified Roland Fantom USB MIDI test phrase:
+  - Command: `./badarak_venv/bin/python -m badarak_player.player test-phrase --port "FANTOM-6 7 8 MIDI OUT 1"`
+  - Result: `Played test phrase on FANTOM-6 7 8 MIDI OUT 1`
 
 ## Pending / Requires Network or Hardware
 
@@ -61,4 +64,4 @@ Date: 2026-05-17
 - Audiveris is installed but not placed on PATH; invoke it via `/Applications/Audiveris.app/Contents/MacOS/Audiveris`.
 - A full Divine Liturgy score candidate has been identified and downloaded for local-only processing, but it is not from the original Diocese/St. Nersess source preference and rights must be reviewed before redistribution.
 - A single page from the full Divine Liturgy candidate has been OMR-transcribed for workflow testing, but the full 420-page score has not been batch-transcribed or manually corrected.
-- Fantom hardware playback has not been verified in this run because no Fantom MIDI port was present.
+- Full score-derived organ MIDI playback on the Fantom has not been musically validated yet; only the short built-in test phrase was sent successfully.
