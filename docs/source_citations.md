@@ -51,6 +51,13 @@ These leads appear to contain entire Divine Liturgy publications, but they are n
    - Use: Candidate lead for locating an entire Divine Liturgy score if official Diocese/St. Nersess paths do not expose a complete downloadable score.
    - Limitation: The linked files are hosted through SharePoint/HathiTrust/MuseScore and need separate access, copyright, and source-eligibility review before use.
 
+1a. Armenian Sacred Music Project / SharePoint: Yegmalian Children's Badarak
+   - URL: https://armeniansacredmusicproject-my.sharepoint.com/personal/sderderian_sacred-music_org/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsderderian%5Fsacred%2Dmusic%5Forg%2FDocuments%2FPublicLibrary%2Fyegmalian%5Fchildrens%2Epdf&parent=%2Fpersonal%2Fsderderian%5Fsacred%2Dmusic%5Forg%2FDocuments%2FPublicLibrary&ga=1
+   - Evidence: User supplied as a good starter PDF and it matches the Armenian Sacred Music Project library's Yegmalian `C Major (Children's Badarak)` lead.
+   - Attempted local fetch: saved `sources/yegmalian-childrens-sharepoint.pdf` and `sources/yegmalian-childrens-sharepoint-download.pdf`, but both resolved to Microsoft sign-in HTML rather than PDF content.
+   - Use: Preferred follow-up lead if browser-authenticated download is available.
+   - Limitation: Not usable for command-line OMR in this run because unauthenticated download did not return a PDF.
+
 2. ArmenianMusic full Yegmalian PDF
    - URL: https://armenianmusic.am/data/files/library/1/16130267704941.pdf
    - Local-only path: `sources/armenianmusic-candidate.pdf`

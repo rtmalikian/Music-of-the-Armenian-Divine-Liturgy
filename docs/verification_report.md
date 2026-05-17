@@ -30,6 +30,7 @@ Date: 2026-05-17
 - Added `tools/audit_score_sources.py` and `sources/source_candidates.json` to prevent excerpt/test PDFs from being promoted as production OMR inputs.
 - Downloaded and inspected `sources/armenianmusic-candidate.pdf`, a 420-page full Yegmalian `Chants of the Divine Liturgy of the Armenian Apostolic Church` PDF. It is now the selected local-only full-score candidate.
 - Verified the full candidate is not a scanned full-page raster PDF: `pdfimages -list` reports 32 embedded images across 420 pages, while the PDF was produced by Adobe InDesign CC 2015 and text extraction works.
+- Checked the user-supplied Armenian Sacred Music Project SharePoint/OneDrive `yegmalian_childrens.pdf` link. Direct command-line fetches returned Microsoft sign-in HTML, not a PDF, so it remains a preferred authenticated-download lead rather than a usable local OMR input.
 - Ran Audiveris batch OMR on local-only test excerpt `sources/hrashapar.pdf`:
   - Command: `/Applications/Audiveris.app/Contents/MacOS/Audiveris -batch -transcribe -export -output omr/hrashapar_test sources/hrashapar.pdf`
   - Output: `omr/hrashapar_test/hrashapar.mxl`
@@ -49,6 +50,10 @@ Date: 2026-05-17
   - Command: `./badarak_venv/bin/python tools/flatten_to_organ_midi.py midi/yegmalian_full_page55_omr_test.mid midi/yegmalian_full_page55_organ_test.mid`
   - Output: `midi/yegmalian_full_page55_organ_test.mid`
   - MIDI check: 1 track, 14.75 seconds, channel 0, program 19.
+- Added `tools/omr_to_organ_midi.py` as a repeatable Audiveris -> MXL -> raw MIDI -> one-track organ MIDI wrapper for selected sheet ranges.
+- Verified the wrapper on sheet 55 of the full Yegmalian candidate outside the sandbox.
+  - Output: `midi/yegmalian_full_page55_wrapper_test_organ.mid`
+  - MIDI check: 1 track, 14.75 seconds.
 
 ## Pending / Requires Network or Hardware
 

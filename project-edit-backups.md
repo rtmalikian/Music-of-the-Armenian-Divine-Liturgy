@@ -48,3 +48,11 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_organ_flatten_backup` before recording one-track organ MIDI verification.
 - Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_organ_flatten_backup` before recording one-track organ MIDI validation status.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_organ_flatten_backup` before logging organ-flatten backup entries.
+- Backed up `README.md` to `backups/README.md.20260517_omr_wrapper_backup` before documenting the repeatable OMR-to-organ-MIDI wrapper.
+- Backed up `docs/omr_workflow.md` to `backups/omr_workflow.md.20260517_omr_wrapper_backup` before documenting the repeatable wrapper workflow.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_omr_wrapper_backup` before recording the wrapper addition.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_omr_wrapper_backup` before logging wrapper backup entries.
+- Backed up `docs/source_citations.md` to `backups/source_citations.md.20260517_childrens_sharepoint_backup` before documenting the user-supplied Children's Badarak SharePoint lead.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_childrens_sharepoint_backup` before recording SharePoint fetch results and wrapper verification.
+- Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_childrens_sharepoint_backup` before recording wrapper-test validation status.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_childrens_sharepoint_backup` before logging SharePoint lead backup entries.

@@ -80,3 +80,14 @@ Run the source audit before any production OMR run:
 ```
 
 This command intentionally fails until `sources/source_candidates.json` contains a real, locally present, full Divine Liturgy score candidate with either vector notation or raster page images at 300 PPI or better.
+
+Run a one-page OMR-to-organ-MIDI test from the selected full score:
+
+```bash
+./badarak_venv/bin/python tools/omr_to_organ_midi.py \
+  sources/armenianmusic-candidate.pdf \
+  --sheets 55 \
+  --name yegmalian_full_page55
+```
+
+The generated score-derived files remain local-only under ignored `omr/` and `midi/` paths until rights and musical validation are complete.

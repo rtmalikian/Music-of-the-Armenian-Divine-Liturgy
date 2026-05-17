@@ -40,6 +40,17 @@ Expected SHA256:
 7. Export cleaned single-track organ MIDI into `midi/`.
 8. Record validation notes in `docs/validation_log.md`.
 
+For a repeatable proof-of-concept run against selected sheets:
+
+```bash
+./badarak_venv/bin/python tools/omr_to_organ_midi.py \
+  sources/armenianmusic-candidate.pdf \
+  --sheets 55 \
+  --name yegmalian_full_page55
+```
+
+This wrapper runs Audiveris, converts the exported MXL to MIDI, and flattens the result to one organ track.
+
 ## Validation Rules
 
 - Do not treat raw OMR output as service-ready.
