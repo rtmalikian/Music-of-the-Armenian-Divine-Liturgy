@@ -129,6 +129,12 @@ Run section-level musical sanity checks against the manifest:
 ./badarak_venv/bin/python tools/validate_section_midi.py khorurt_khorin
 ```
 
+Summarize all generated sections, review counts, and sanity status:
+
+```bash
+./badarak_venv/bin/python tools/section_status_report.py --output docs/section_status_report.md
+```
+
 Create a manual review checklist from Audiveris logs:
 
 ```bash

@@ -109,6 +109,9 @@ Date: 2026-05-17
   - `./badarak_venv/bin/python tools/validate_section_midi.py khorurt_khorin` passed: 173.75 seconds, 2,244 note-on events, 8 score pages.
   - `./badarak_venv/bin/python tools/validate_section_midi.py hays_hark` passed: 150.81 seconds, 1,523 note-on events, 6 score pages.
   - `./badarak_venv/bin/python tools/validate_section_midi.py aysor_zhoghovyal` failed as intended: 14.0 seconds and 87 note-on events for 7 score pages.
+- Added `tools/section_status_report.py` to summarize all generated sections, review counts, and sanity status.
+  - Command: `./badarak_venv/bin/python tools/section_status_report.py --output docs/section_status_report.md`
+  - Result: `docs/section_status_report.md` reports three sanity-passing raw sections and one sanity-failing section.
 
 ## Pending / Requires Network or Hardware
 
