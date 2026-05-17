@@ -104,3 +104,9 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_barekhosutyamp_batch_backup` before recording Barekhosutyamp verification.
 - Backed up `docs/completion_audit.md` to `backups/completion_audit.md.20260517_barekhosutyamp_batch_backup` before updating the completion audit.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_barekhosutyamp_batch_backup` before logging Barekhosutyamp backup entries.
+- Backed up `sources/section_manifest.json` to `backups/section_manifest.json.20260517_aysor_batch_backup` before adding the Aysor zhoghovyal section status.
+- Backed up `README.md` to `backups/README.md.20260517_aysor_batch_backup` before documenting the Aysor zhoghovyal section status.
+- Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_aysor_batch_backup` before logging the Aysor zhoghovyal OMR batch.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_aysor_batch_backup` before recording Aysor zhoghovyal verification.
+- Backed up `docs/completion_audit.md` to `backups/completion_audit.md.20260517_aysor_batch_backup` before updating the completion audit.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_aysor_batch_backup` before logging Aysor zhoghovyal backup entries.

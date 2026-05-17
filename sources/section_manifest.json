@@ -58,5 +58,25 @@
     "organ_midi_output": "midi/barekhosutyamp_organ.mid",
     "review_report": "docs/omr_review_report_barekhosutyamp.md",
     "notes": "Range inferred from table of contents and score-page text: Barekhosutyamp starts on score page 15, and the visible Aysor zhoghovyal cue appears on score page 22. Audiveris split this range into multiple internal scores and exported an .mvtnull.mxl file; output is raw OMR and requires careful manual correction before service use."
+  },
+  {
+    "id": "aysor_zhoghovyal",
+    "title": "Aysor zhoghovyal",
+    "armenian_title": "Այսօր ժողովեալ",
+    "source_candidate_id": "yegmalian_2017_full_reprint",
+    "score_page_start": 22,
+    "score_page_end": 28,
+    "pdf_sheet_start": 76,
+    "pdf_sheet_end": 82,
+    "tempo_bpm": null,
+    "meter": "unverified",
+    "mode_or_key": "unverified",
+    "voicing": "three-part male choir",
+    "validation_status": "omr_export_failed_musical_sanity",
+    "status": "omr_batch_exported_high_risk",
+    "omr_output": "omr/aysor_zhoghovyal/armenianmusic-candidate.mvtnull.mxl",
+    "organ_midi_output": "midi/aysor_zhoghovyal_organ.mid",
+    "review_report": "docs/omr_review_report_aysor_zhoghovyal.md",
+    "notes": "Range inferred from visible score text: Aysor zhoghovyal cue appears on score page 22, and the section appears to continue through score page 28. Audiveris created ten internal scores, logged PartCollation warnings and a NullPointerException during export, and produced only 14.0 seconds / 87 note-on events for this seven-page range. Treat as failed/high-risk raw OMR, not a usable transcription."
   }
 ]

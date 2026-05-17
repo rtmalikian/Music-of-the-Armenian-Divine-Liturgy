@@ -97,11 +97,19 @@ Date: 2026-05-17
   - MIDI structure: 1 track, 55.0 seconds, 729 note-on events.
   - Review report: `docs/omr_review_report_barekhosutyamp.md`, with 14 OCR, 38 rhythm, 19 symbol-link, and 8 warning checklist items.
   - Risk note: Audiveris split this range into multiple internal scores and exported `.mvtnull.mxl`; this section needs especially careful manual score review.
+- Ran the next inferred section batch, `aysor_zhoghovyal`.
+  - Command: `./badarak_venv/bin/python tools/omr_to_organ_midi.py sources/armenianmusic-candidate.pdf --sheets 76-82 --name aysor_zhoghovyal --channel 0 --program 19`
+  - Output MusicXML: `omr/aysor_zhoghovyal/armenianmusic-candidate.mvtnull.mxl`
+  - Output organ MIDI: `midi/aysor_zhoghovyal_organ.mid`
+  - MIDI validation: `./badarak_venv/bin/python tools/validate_organ_midi.py midi/aysor_zhoghovyal_organ.mid`
+  - MIDI structure: 1 track, 14.0 seconds, 87 note-on events.
+  - Review report: `docs/omr_review_report_aysor_zhoghovyal.md`, with 14 OCR, 2 rhythm, 16 symbol-link, and 30 warning checklist items.
+  - Failure note: Audiveris created ten internal scores and logged PartCollation warnings plus a NullPointerException during export. The MIDI is structurally valid but fails musical sanity for a seven-page section.
 
 ## Pending / Requires Network or Hardware
 
 - Python dependency install initially failed inside the sandbox because PyPI DNS resolution was blocked; rerun with approved PyPI network access succeeded.
 - Audiveris is installed but not placed on PATH; invoke it via `/Applications/Audiveris.app/Contents/MacOS/Audiveris`.
 - A full Divine Liturgy score candidate has been identified and downloaded for local-only processing, but it is not from the original Diocese/St. Nersess source preference and rights must be reviewed before redistribution.
-- Three sections from the full Divine Liturgy candidate have been OMR-transcribed for workflow testing, but the full 420-page score has not been batch-transcribed or manually corrected.
+- Four inferred sections from the full Divine Liturgy candidate have been attempted; three yielded structurally plausible raw MIDI, and `aysor_zhoghovyal` failed musical sanity. The full 420-page score has not been batch-transcribed or manually corrected.
 - Score-derived organ MIDI playback has been transport-tested on the Fantom for one raw section. Musical correctness and service-readiness still require manual correction and listening review.

@@ -15,9 +15,9 @@ Objective: implement `prompt.md` as a local toolchain for sourcing Armenian Divi
 | Compare PDF quality / DPI | `tools/audit_score_sources.py --require-production` passes; vector excerpts and 420-page vector-layout full candidate are documented. | Implemented |
 | Create `badarak_venv` | `badarak_venv` exists and imports `mido`, `rtmidi`, `music21`, and `pretty_midi`. | Implemented |
 | Install best open-source OMR tool | Audiveris 5.10.2 installed at `/Applications/Audiveris.app`; version and SHA256 documented. | Implemented |
-| Convert at least one score page/excerpt to MIDI | Hrashapar excerpt, full Yegmalian page 55, and mapped `khorurt_khorin`, `hays_hark`, and `barekhosutyamp` sections were processed through Audiveris -> MXL -> MIDI. | Implemented as proof of concept |
+| Convert at least one score page/excerpt to MIDI | Hrashapar excerpt, full Yegmalian page 55, and mapped `khorurt_khorin`, `hays_hark`, `barekhosutyamp`, and `aysor_zhoghovyal` sections were processed through Audiveris -> MXL -> MIDI. | Implemented as proof of concept; `aysor_zhoghovyal` failed musical sanity |
 | Build OMR validation workflow | `tools/omr_review_report.py` generates `docs/omr_review_report.md` from Audiveris logs, turning OCR/rhythm/symbol warnings into manual correction checklist items. | Implemented |
-| Normalize to one organ track | `tools/flatten_to_organ_midi.py` creates one-track organ MIDI; verified `midi/yegmalian_full_page55_wrapper_test_organ.mid`, `midi/khorurt_khorin_organ.mid`, `midi/hays_hark_organ.mid`, and `midi/barekhosutyamp_organ.mid` have one track. | Implemented |
+| Normalize to one organ track | `tools/flatten_to_organ_midi.py` creates one-track organ MIDI; verified `midi/yegmalian_full_page55_wrapper_test_organ.mid`, `midi/khorurt_khorin_organ.mid`, `midi/hays_hark_organ.mid`, `midi/barekhosutyamp_organ.mid`, and `midi/aysor_zhoghovyal_organ.mid` have one track. | Implemented structurally |
 | Store per-section metadata | `sources/section_manifest.json` stores title, source page range, PDF sheet range, tempo, meter, mode/key, voicing, and validation status. Unknown musical fields are explicitly `unverified`. | Implemented |
 | Build repeatable OMR-to-organ wrapper | `tools/omr_to_organ_midi.py` runs Audiveris, converts MXL to MIDI, and flattens to one organ track. | Implemented |
 | Build Roland Fantom USB MIDI player | `badarak_player/player.py` supports list-ports, test-phrase, play, `--start-seconds`, patch/program selection, and all-notes-off cleanup. | Implemented |
@@ -29,7 +29,7 @@ Objective: implement `prompt.md` as a local toolchain for sourcing Armenian Divi
 
 ## Remaining Gaps
 
-- The full 420-page Yegmalian score has not been batch-transcribed end-to-end; three mapped sections have been batch-exported.
+- The full 420-page Yegmalian score has not been batch-transcribed end-to-end; four inferred sections have been attempted, and `aysor_zhoghovyal` failed musical sanity.
 - The generated OMR MIDI has not been manually corrected against the score, although warning checklists now exist in `docs/omr_review_report.md`, `docs/omr_review_report_khorurt_khorin.md`, `docs/omr_review_report_hays_hark.md`, and `docs/omr_review_report_barekhosutyamp.md`.
 - The one-page full-score proof includes Audiveris rhythm warnings, so it is not service-ready.
 - The user-supplied Armenian Sacred Music Project `yegmalian_childrens.pdf` link could not be fetched anonymously; browser-authenticated download may still be useful.
