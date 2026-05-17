@@ -1,0 +1,19 @@
+badarak_venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+backups/
+
+# Local-only source and generated media
+sources/*.pdf
+sources/*.tif
+sources/*.tiff
+sources/*.png
+sources/*.jpg
+sources/*.jpeg
+omr/*
+!omr/.gitkeep
+midi/*.mid
+midi/*.midi
+!midi/.gitkeep
+!midi/test_organ_excerpt.mid
