@@ -31,7 +31,7 @@ Objective: implement `prompt.md` as a local toolchain for sourcing Armenian Divi
 
 ## Remaining Gaps
 
-- The full 420-page Yegmalian score has not been batch-transcribed end-to-end; four inferred sections have been attempted, and `aysor_zhoghovyal` failed musical sanity.
+- The full 420-page Yegmalian score has not been batch-transcribed end-to-end; four inferred sections have been attempted. `aysor_zhoghovyal` failed musical sanity as a seven-sheet batch, and per-sheet retries recovered only partial raw material.
 - The generated OMR MIDI has not been manually corrected against the score, although warning checklists now exist in `docs/omr_review_report.md`, `docs/omr_review_report_khorurt_khorin.md`, `docs/omr_review_report_hays_hark.md`, and `docs/omr_review_report_barekhosutyamp.md`.
 - The one-page full-score proof includes Audiveris rhythm warnings, so it is not service-ready.
 - The user-supplied Armenian Sacred Music Project `yegmalian_childrens.pdf` link could not be fetched anonymously; browser-authenticated download may still be useful.

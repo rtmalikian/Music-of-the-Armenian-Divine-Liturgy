@@ -115,6 +115,8 @@ The first mapped sections have been batch-exported locally:
 - `barekhosutyamp`: `omr/barekhosutyamp/armenianmusic-candidate.mvtnull.mxl`, `midi/barekhosutyamp_organ.mid`, `docs/omr_review_report_barekhosutyamp.md`
 - `aysor_zhoghovyal`: high-risk/failed musical sanity; `midi/aysor_zhoghovyal_organ.mid` is structurally valid but too short for the inferred seven-page range.
 
+`aysor_zhoghovyal` was retried as one-sheet jobs for PDF sheets 76-82. The retry produced one-track organ MIDI files for every sheet, but the results remain raw and uneven: sheets 76 and 78 are the strongest recoveries, while sheets 77 and 81 are too sparse to treat as usable transcriptions. See `docs/aysor_zhoghovyal_retry_report.md`.
+
 The generated MIDI files are structurally valid but not service-ready until the review checklists are corrected against the score.
 
 Validate an organ MIDI before Fantom playback:

@@ -77,6 +77,6 @@
     "omr_output": "omr/aysor_zhoghovyal/armenianmusic-candidate.mvtnull.mxl",
     "organ_midi_output": "midi/aysor_zhoghovyal_organ.mid",
     "review_report": "docs/omr_review_report_aysor_zhoghovyal.md",
-    "notes": "Range inferred from visible score text: Aysor zhoghovyal cue appears on score page 22, and the section appears to continue through score page 28. Audiveris created ten internal scores, logged PartCollation warnings and a NullPointerException during export, and produced only 14.0 seconds / 87 note-on events for this seven-page range. Treat as failed/high-risk raw OMR, not a usable transcription."
+    "notes": "Range inferred from visible score text: Aysor zhoghovyal cue appears on score page 22, and the section appears to continue through score page 28. Audiveris created ten internal scores, logged PartCollation warnings and a NullPointerException during export, and produced only 14.0 seconds / 87 note-on events for this seven-page range. Per-sheet retries for PDF sheets 76-82 produced structurally valid one-track organ MIDI files, but several are too short or too sparse; see docs/aysor_zhoghovyal_retry_report.md. Treat as failed/high-risk raw OMR, not a usable transcription."
   }
 ]
