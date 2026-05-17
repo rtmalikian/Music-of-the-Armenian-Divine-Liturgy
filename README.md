@@ -123,6 +123,12 @@ Validate an organ MIDI before Fantom playback:
 ./badarak_venv/bin/python tools/validate_organ_midi.py midi/<name>_organ.mid
 ```
 
+Run section-level musical sanity checks against the manifest:
+
+```bash
+./badarak_venv/bin/python tools/validate_section_midi.py khorurt_khorin
+```
+
 Create a manual review checklist from Audiveris logs:
 
 ```bash

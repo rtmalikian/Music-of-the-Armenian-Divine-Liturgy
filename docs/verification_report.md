@@ -105,6 +105,10 @@ Date: 2026-05-17
   - MIDI structure: 1 track, 14.0 seconds, 87 note-on events.
   - Review report: `docs/omr_review_report_aysor_zhoghovyal.md`, with 14 OCR, 2 rhythm, 16 symbol-link, and 30 warning checklist items.
   - Failure note: Audiveris created ten internal scores and logged PartCollation warnings plus a NullPointerException during export. The MIDI is structurally valid but fails musical sanity for a seven-page section.
+- Added `tools/validate_section_midi.py` to catch structurally valid but musically implausible OMR outputs.
+  - `./badarak_venv/bin/python tools/validate_section_midi.py khorurt_khorin` passed: 173.75 seconds, 2,244 note-on events, 8 score pages.
+  - `./badarak_venv/bin/python tools/validate_section_midi.py hays_hark` passed: 150.81 seconds, 1,523 note-on events, 6 score pages.
+  - `./badarak_venv/bin/python tools/validate_section_midi.py aysor_zhoghovyal` failed as intended: 14.0 seconds and 87 note-on events for 7 score pages.
 
 ## Pending / Requires Network or Hardware
 
