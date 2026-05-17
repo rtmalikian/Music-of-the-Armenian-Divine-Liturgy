@@ -1,0 +1,28 @@
+[
+  {
+    "id": "khorurt_khorin",
+    "title": "Khorurt khorin",
+    "armenian_title": "Խորհուրդ խորին",
+    "source_candidate_id": "yegmalian_2017_full_reprint",
+    "score_page_start": 1,
+    "score_page_end": 8,
+    "pdf_sheet_start": 55,
+    "pdf_sheet_end": 62,
+    "voicing": "three-part male choir",
+    "status": "ready_for_omr_batch",
+    "notes": "PDF sheet 55 corresponds to printed score page 1 based on pdftotext inspection. Full range inferred from table of contents where the next section begins on score page 9."
+  },
+  {
+    "id": "hays_hark",
+    "title": "Hays hark",
+    "armenian_title": "Յայս յարկ",
+    "source_candidate_id": "yegmalian_2017_full_reprint",
+    "score_page_start": 9,
+    "score_page_end": 14,
+    "pdf_sheet_start": 63,
+    "pdf_sheet_end": 68,
+    "voicing": "three-part male choir",
+    "status": "planned",
+    "notes": "Range inferred from table of contents: Hays hark starts on score page 9 and Barekhosutyamp starts on score page 15."
+  }
+]
