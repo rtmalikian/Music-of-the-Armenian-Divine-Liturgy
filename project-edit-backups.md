@@ -37,3 +37,14 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_omr_smoke_backup` before recording the Hrashapar OMR-to-MIDI smoke test.
 - Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_omr_smoke_backup` before recording the Hrashapar OMR validation status.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_omr_smoke_backup` before logging OMR smoke-test backup entries.
+- Backed up `sources/source_candidates.json` to `backups/source_candidates.json.20260517_full_candidate_backup` before adding the full Yegmalian score candidate.
+- Backed up `tools/audit_score_sources.py` to `backups/audit_score_sources.py.20260517_full_candidate_backup` before allowing explicitly marked vector-layout full PDFs.
+- Backed up `docs/source_citations.md` to `backups/source_citations.md.20260517_full_candidate_backup` before documenting the ArmenianMusic full-score candidate.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_full_candidate_backup` before recording full-score candidate verification.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_full_candidate_backup` before logging full-score candidate backup entries.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_full_omr_page_backup` before recording the full-source page OMR smoke test and organ-flattening helper.
+- Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_full_omr_page_backup` before recording the full-source page validation status.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_full_omr_page_backup` before logging full-source OMR backup entries.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_organ_flatten_backup` before recording one-track organ MIDI verification.
+- Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_organ_flatten_backup` before recording one-track organ MIDI validation status.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_organ_flatten_backup` before logging organ-flatten backup entries.

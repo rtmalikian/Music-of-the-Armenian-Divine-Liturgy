@@ -51,11 +51,19 @@ These leads appear to contain entire Divine Liturgy publications, but they are n
    - Use: Candidate lead for locating an entire Divine Liturgy score if official Diocese/St. Nersess paths do not expose a complete downloadable score.
    - Limitation: The linked files are hosted through SharePoint/HathiTrust/MuseScore and need separate access, copyright, and source-eligibility review before use.
 
+2. ArmenianMusic full Yegmalian PDF
+   - URL: https://armenianmusic.am/data/files/library/1/16130267704941.pdf
+   - Local-only path: `sources/armenianmusic-candidate.pdf`
+   - Evidence: `pdfinfo` reports 420 pages, Adobe InDesign CC 2015 creator, and PDF version 1.5. `pdftotext` identifies the work as `Chants of the Divine Liturgy of the Armenian Apostolic Church`, transcribed and arranged for three and four voices by M. Yekmalyan, Yerevan 2017. The front matter says this volume is the first complete reprint of Yekmalyan's 1896 Divine Liturgy.
+   - Quality: Layout/notation appears vector-based; `pdfimages -list` reports only 32 embedded images across 420 pages rather than full-page raster scans. Some embedded images are 100-150 PPI, but they are not the main score-page source.
+   - Use: Selected full-score candidate for local OMR experimentation.
+   - Limitation: This is not from the original Diocese/St. Nersess priority list and must stay local-only until rights and redistribution terms are confirmed.
+
 ## Current Source Decision
 
 The strongest official path for score-related material is the Eastern Diocese Sacred Music Council site, starting with the Holy Badarak hub and the Episcopal Badarak special-music score links. The St. Nersess PDFs are useful for liturgical text alignment but are not sufficient as organ-score source material.
 
-The production source has not been selected yet because the downloaded official PDFs are excerpts. The required production source is an entire Divine Liturgy score PDF, preferably vector-generated. The excerpt PDFs remain useful for validating the OMR and Roland playback pipeline.
+The production source candidate is now `sources/armenianmusic-candidate.pdf`, a 420-page full Yegmalian Divine Liturgy score. The official Diocese/Sacred Music Council downloads remain excerpt test fixtures. The selected full candidate is suitable for local OMR experimentation but should not be committed or redistributed until rights are confirmed.
 
 Keep any downloaded PDFs under `sources/` for local processing only. Do not commit PDFs until their redistribution terms are confirmed.
 

@@ -25,5 +25,16 @@
     "source_type": "official_excerpt",
     "full_divine_liturgy": false,
     "use": "workflow_test_only"
+  },
+  {
+    "id": "yegmalian_2017_full_reprint",
+    "title": "Chants of the Divine Liturgy of the Armenian Apostolic Church",
+    "path": "sources/armenianmusic-candidate.pdf",
+    "source_url": "https://armenianmusic.am/data/files/library/1/16130267704941.pdf",
+    "source_type": "full_score_candidate",
+    "full_divine_liturgy": true,
+    "vector_layout_pdf": true,
+    "rights_status": "local_processing_only_pending_rights_review",
+    "use": "selected_full_score_candidate"
   }
 ]

@@ -86,7 +86,7 @@ def score_candidate(candidate: dict[str, Any]) -> dict[str, Any]:
         for image in images
         if image["type"] == "stencil" and image["x_ppi"].isdigit() and image["y_ppi"].isdigit()
     ]
-    vector_like = exists and not errors and len(images) == 0
+    vector_like = exists and not errors and (len(images) == 0 or bool(candidate.get("vector_layout_pdf")))
     min_raster_ppi = min(raster_ppis) if raster_ppis else None
 
     usable_for_production = bool(
@@ -104,6 +104,7 @@ def score_candidate(candidate: dict[str, Any]) -> dict[str, Any]:
         "pages": info.get("Pages"),
         "creator": info.get("Creator"),
         "vector_like": vector_like,
+        "vector_layout_pdf": bool(candidate.get("vector_layout_pdf")),
         "min_raster_ppi": min_raster_ppi,
         "max_stencil_ppi": max(stencil_ppis) if stencil_ppis else None,
         "usable_for_production": usable_for_production,
