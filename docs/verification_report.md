@@ -82,11 +82,18 @@ Date: 2026-05-17
   - Command: `./badarak_venv/bin/python -m badarak_player.player play midi/khorurt_khorin_organ.mid --port "FANTOM-6 7 8 MIDI OUT 1"`
   - Result: `Played midi/khorurt_khorin_organ.mid on FANTOM-6 7 8 MIDI OUT 1`
   - Scope: validates the playback transport path for a generated organ MIDI section; it does not validate musical correctness of the raw OMR transcription.
+- Ran the second mapped full-score section batch, `hays_hark`.
+  - Command: `./badarak_venv/bin/python tools/run_section_omr.py hays_hark`
+  - Output MusicXML: `omr/hays_hark/armenianmusic-candidate.mxl`
+  - Output organ MIDI: `midi/hays_hark_organ.mid`
+  - MIDI validation: `./badarak_venv/bin/python tools/validate_organ_midi.py midi/hays_hark_organ.mid`
+  - MIDI structure: 1 track, 150.81 seconds, 1,523 note-on events.
+  - Review report: `docs/omr_review_report_hays_hark.md`, with 12 OCR, 13 symbol-link, and 18 time-signature warning checklist items.
 
 ## Pending / Requires Network or Hardware
 
 - Python dependency install initially failed inside the sandbox because PyPI DNS resolution was blocked; rerun with approved PyPI network access succeeded.
 - Audiveris is installed but not placed on PATH; invoke it via `/Applications/Audiveris.app/Contents/MacOS/Audiveris`.
 - A full Divine Liturgy score candidate has been identified and downloaded for local-only processing, but it is not from the original Diocese/St. Nersess source preference and rights must be reviewed before redistribution.
-- One 8-page section from the full Divine Liturgy candidate has been OMR-transcribed for workflow testing, but the full 420-page score has not been batch-transcribed or manually corrected.
+- Two sections from the full Divine Liturgy candidate have been OMR-transcribed for workflow testing, but the full 420-page score has not been batch-transcribed or manually corrected.
 - Score-derived organ MIDI playback has been transport-tested on the Fantom for one raw section. Musical correctness and service-readiness still require manual correction and listening review.

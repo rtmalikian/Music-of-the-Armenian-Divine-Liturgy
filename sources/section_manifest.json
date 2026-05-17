@@ -32,8 +32,11 @@
     "meter": "unverified",
     "mode_or_key": "unverified",
     "voicing": "three-part male choir",
-    "validation_status": "mapped_not_omr_processed",
-    "status": "planned",
-    "notes": "Range inferred from table of contents: Hays hark starts on score page 9 and Barekhosutyamp starts on score page 15."
+    "validation_status": "raw_omr_needs_correction",
+    "status": "omr_batch_exported",
+    "omr_output": "omr/hays_hark/armenianmusic-candidate.mxl",
+    "organ_midi_output": "midi/hays_hark_organ.mid",
+    "review_report": "docs/omr_review_report_hays_hark.md",
+    "notes": "Range inferred from table of contents: Hays hark starts on score page 9 and Barekhosutyamp starts on score page 15. Audiveris exported sheets 63-68 on 2026-05-17; output is raw OMR and requires manual correction before service use."
   }
 ]
