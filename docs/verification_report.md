@@ -71,11 +71,18 @@ Date: 2026-05-17
   - `./badarak_venv/bin/python -c "from pathlib import Path; import mido; from badarak_player.player import iter_timed_messages; mf=mido.MidiFile('midi/test_organ_excerpt.mid'); msgs=list(iter_timed_messages(mf, start_seconds=0.5)); print(len(msgs)); print(round(msgs[0][0], 3), msgs[0][1].type)"`
 - Verified OMR review report generation:
   - `./badarak_venv/bin/python tools/omr_review_report.py omr/yegmalian_full_page55_test/armenianmusic-candidate-20260517T0558.log --output docs/omr_review_report.md`
+- Ran the first mapped full-score section batch, `khorurt_khorin`, outside the sandbox after the sandboxed Audiveris run aborted with `SIGABRT`.
+  - Command: `./badarak_venv/bin/python tools/run_section_omr.py khorurt_khorin`
+  - Output MusicXML: `omr/khorurt_khorin/armenianmusic-candidate.mxl`
+  - Output organ MIDI: `midi/khorurt_khorin_organ.mid`
+  - MIDI validation: `./badarak_venv/bin/python tools/validate_organ_midi.py midi/khorurt_khorin_organ.mid`
+  - MIDI structure: 1 track, 173.75 seconds, 2,244 note-on events.
+  - Review report: `docs/omr_review_report_khorurt_khorin.md`, with 16 OCR, 14 rhythm, and 23 symbol-link checklist items.
 
 ## Pending / Requires Network or Hardware
 
 - Python dependency install initially failed inside the sandbox because PyPI DNS resolution was blocked; rerun with approved PyPI network access succeeded.
 - Audiveris is installed but not placed on PATH; invoke it via `/Applications/Audiveris.app/Contents/MacOS/Audiveris`.
 - A full Divine Liturgy score candidate has been identified and downloaded for local-only processing, but it is not from the original Diocese/St. Nersess source preference and rights must be reviewed before redistribution.
-- A single page from the full Divine Liturgy candidate has been OMR-transcribed for workflow testing, but the full 420-page score has not been batch-transcribed or manually corrected.
+- One 8-page section from the full Divine Liturgy candidate has been OMR-transcribed for workflow testing, but the full 420-page score has not been batch-transcribed or manually corrected.
 - Full score-derived organ MIDI playback on the Fantom has not been musically validated yet; only the short built-in test phrase was sent successfully.

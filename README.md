@@ -108,6 +108,14 @@ Run a known section from `sources/section_manifest.json`:
 
 Each manifest entry stores title, source page range, PDF sheet range, tempo, meter, mode/key, voicing, and validation status. Unknown musical metadata is intentionally marked `unverified` until it is checked against the score during MusicXML/MIDI correction.
 
+The first mapped section, `khorurt_khorin`, has been batch-exported locally:
+
+- MusicXML: `omr/khorurt_khorin/armenianmusic-candidate.mxl`
+- Raw one-track organ MIDI: `midi/khorurt_khorin_organ.mid`
+- Review checklist: `docs/omr_review_report_khorurt_khorin.md`
+
+The MIDI is structurally valid but not service-ready until the review checklist is corrected against the score.
+
 Validate an organ MIDI before Fantom playback:
 
 ```bash
