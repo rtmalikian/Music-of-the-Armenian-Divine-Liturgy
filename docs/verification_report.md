@@ -89,11 +89,19 @@ Date: 2026-05-17
   - MIDI validation: `./badarak_venv/bin/python tools/validate_organ_midi.py midi/hays_hark_organ.mid`
   - MIDI structure: 1 track, 150.81 seconds, 1,523 note-on events.
   - Review report: `docs/omr_review_report_hays_hark.md`, with 12 OCR, 13 symbol-link, and 18 time-signature warning checklist items.
+- Ran the next inferred full-score section batch, `barekhosutyamp`.
+  - Command: `./badarak_venv/bin/python tools/omr_to_organ_midi.py sources/armenianmusic-candidate.pdf --sheets 69-75 --name barekhosutyamp --channel 0 --program 19`
+  - Output MusicXML: `omr/barekhosutyamp/armenianmusic-candidate.mvtnull.mxl`
+  - Output organ MIDI: `midi/barekhosutyamp_organ.mid`
+  - MIDI validation: `./badarak_venv/bin/python tools/validate_organ_midi.py midi/barekhosutyamp_organ.mid`
+  - MIDI structure: 1 track, 55.0 seconds, 729 note-on events.
+  - Review report: `docs/omr_review_report_barekhosutyamp.md`, with 14 OCR, 38 rhythm, 19 symbol-link, and 8 warning checklist items.
+  - Risk note: Audiveris split this range into multiple internal scores and exported `.mvtnull.mxl`; this section needs especially careful manual score review.
 
 ## Pending / Requires Network or Hardware
 
 - Python dependency install initially failed inside the sandbox because PyPI DNS resolution was blocked; rerun with approved PyPI network access succeeded.
 - Audiveris is installed but not placed on PATH; invoke it via `/Applications/Audiveris.app/Contents/MacOS/Audiveris`.
 - A full Divine Liturgy score candidate has been identified and downloaded for local-only processing, but it is not from the original Diocese/St. Nersess source preference and rights must be reviewed before redistribution.
-- Two sections from the full Divine Liturgy candidate have been OMR-transcribed for workflow testing, but the full 420-page score has not been batch-transcribed or manually corrected.
+- Three sections from the full Divine Liturgy candidate have been OMR-transcribed for workflow testing, but the full 420-page score has not been batch-transcribed or manually corrected.
 - Score-derived organ MIDI playback has been transport-tested on the Fantom for one raw section. Musical correctness and service-readiness still require manual correction and listening review.

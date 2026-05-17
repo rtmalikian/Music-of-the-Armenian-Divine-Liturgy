@@ -38,5 +38,25 @@
     "organ_midi_output": "midi/hays_hark_organ.mid",
     "review_report": "docs/omr_review_report_hays_hark.md",
     "notes": "Range inferred from table of contents: Hays hark starts on score page 9 and Barekhosutyamp starts on score page 15. Audiveris exported sheets 63-68 on 2026-05-17; output is raw OMR and requires manual correction before service use."
+  },
+  {
+    "id": "barekhosutyamp",
+    "title": "Barekhosutyamp",
+    "armenian_title": "Բարեխօսութեամբ",
+    "source_candidate_id": "yegmalian_2017_full_reprint",
+    "score_page_start": 15,
+    "score_page_end": 21,
+    "pdf_sheet_start": 69,
+    "pdf_sheet_end": 75,
+    "tempo_bpm": null,
+    "meter": "unverified",
+    "mode_or_key": "unverified",
+    "voicing": "three-part male choir",
+    "validation_status": "raw_omr_needs_correction_high_risk",
+    "status": "omr_batch_exported",
+    "omr_output": "omr/barekhosutyamp/armenianmusic-candidate.mvtnull.mxl",
+    "organ_midi_output": "midi/barekhosutyamp_organ.mid",
+    "review_report": "docs/omr_review_report_barekhosutyamp.md",
+    "notes": "Range inferred from table of contents and score-page text: Barekhosutyamp starts on score page 15, and the visible Aysor zhoghovyal cue appears on score page 22. Audiveris split this range into multiple internal scores and exported an .mvtnull.mxl file; output is raw OMR and requires careful manual correction before service use."
   }
 ]

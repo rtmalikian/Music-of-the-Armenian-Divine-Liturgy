@@ -112,6 +112,7 @@ The first mapped sections have been batch-exported locally:
 
 - `khorurt_khorin`: `omr/khorurt_khorin/armenianmusic-candidate.mxl`, `midi/khorurt_khorin_organ.mid`, `docs/omr_review_report_khorurt_khorin.md`
 - `hays_hark`: `omr/hays_hark/armenianmusic-candidate.mxl`, `midi/hays_hark_organ.mid`, `docs/omr_review_report_hays_hark.md`
+- `barekhosutyamp`: `omr/barekhosutyamp/armenianmusic-candidate.mvtnull.mxl`, `midi/barekhosutyamp_organ.mid`, `docs/omr_review_report_barekhosutyamp.md`
 
 The generated MIDI files are structurally valid but not service-ready until the review checklists are corrected against the score.
 
