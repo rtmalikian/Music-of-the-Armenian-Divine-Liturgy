@@ -21,3 +21,5 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_full_liturgy_source_backup` before adding source-quality rows.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_full_liturgy_source_backup` before logging full-liturgy clarification backups.
 - Backed up `.gitignore` to `backups/gitignore.20260517_test_midi_allow_backup` before allowing the generated proof-of-concept MIDI fixture into version control.
+- Backed up `README.md` to `backups/README.md.20260517_github_url_backup` before adding the GitHub repository URL.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_github_url_backup` before logging the GitHub URL documentation backup.

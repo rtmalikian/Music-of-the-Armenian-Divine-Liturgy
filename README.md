@@ -2,6 +2,8 @@
 
 Author: Raphael Malikian <rtmalikian@gmail.com>
 
+GitHub: https://github.com/rtmalikian/Music-of-the-Armenian-Divine-Liturgy
+
 This project is a local workflow for preparing organ MIDI from Armenian Divine Liturgy / Badarak score material and playing it over USB MIDI on a Roland Fantom when an organist is not available.
 
 The implementation is intentionally separate from `music_script_python/`. That folder is only a reference for Fantom-oriented orchestration patterns.
