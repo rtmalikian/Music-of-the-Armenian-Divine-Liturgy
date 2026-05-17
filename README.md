@@ -113,3 +113,11 @@ Validate an organ MIDI before Fantom playback:
 ```bash
 ./badarak_venv/bin/python tools/validate_organ_midi.py midi/<name>_organ.mid
 ```
+
+Create a manual review checklist from Audiveris logs:
+
+```bash
+./badarak_venv/bin/python tools/omr_review_report.py \
+  omr/yegmalian_full_page55_test/armenianmusic-candidate-20260517T0558.log \
+  --output docs/omr_review_report.md
+```

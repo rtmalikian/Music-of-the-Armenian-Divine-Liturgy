@@ -51,6 +51,14 @@ For a repeatable proof-of-concept run against selected sheets:
 
 This wrapper runs Audiveris, converts the exported MXL to MIDI, and flattens the result to one organ track.
 
+After each Audiveris run, convert the log into a review checklist:
+
+```bash
+./badarak_venv/bin/python tools/omr_review_report.py \
+  omr/yegmalian_full_page55_test/armenianmusic-candidate-20260517T0558.log \
+  --output docs/omr_review_report.md
+```
+
 For sections already mapped in `sources/section_manifest.json`, prefer:
 
 ```bash
@@ -66,5 +74,6 @@ Each section manifest entry should include title, source page range, PDF sheet r
 
 - Do not treat raw OMR output as service-ready.
 - Validate by page and measure.
+- Use `tools/omr_review_report.py` to turn Audiveris rhythm, OCR, and symbol-link warnings into explicit correction checklist items.
 - Mark each piece as one of: `raw_omr`, `needs_correction`, `corrected`, `playback_tested`, `service_ready`.
 - Keep the Fantom playback copy single-channel unless a real organ registration plan requires otherwise.

@@ -16,6 +16,7 @@ Objective: implement `prompt.md` as a local toolchain for sourcing Armenian Divi
 | Create `badarak_venv` | `badarak_venv` exists and imports `mido`, `rtmidi`, `music21`, and `pretty_midi`. | Implemented |
 | Install best open-source OMR tool | Audiveris 5.10.2 installed at `/Applications/Audiveris.app`; version and SHA256 documented. | Implemented |
 | Convert at least one score page/excerpt to MIDI | Hrashapar excerpt and full Yegmalian page 55 were processed through Audiveris -> MXL -> MIDI. | Implemented as proof of concept |
+| Build OMR validation workflow | `tools/omr_review_report.py` generates `docs/omr_review_report.md` from Audiveris logs, turning OCR/rhythm/symbol warnings into manual correction checklist items. | Implemented |
 | Normalize to one organ track | `tools/flatten_to_organ_midi.py` creates one-track organ MIDI; verified `midi/yegmalian_full_page55_wrapper_test_organ.mid` has one track. | Implemented |
 | Store per-section metadata | `sources/section_manifest.json` stores title, source page range, PDF sheet range, tempo, meter, mode/key, voicing, and validation status. Unknown musical fields are explicitly `unverified`. | Implemented |
 | Build repeatable OMR-to-organ wrapper | `tools/omr_to_organ_midi.py` runs Audiveris, converts MXL to MIDI, and flattens to one organ track. | Implemented |
@@ -29,7 +30,7 @@ Objective: implement `prompt.md` as a local toolchain for sourcing Armenian Divi
 ## Remaining Gaps
 
 - The full 420-page Yegmalian score has not been batch-transcribed end-to-end.
-- The generated OMR MIDI has not been manually corrected against the score.
+- The generated OMR MIDI has not been manually corrected against the score, although the first-page warning checklist now exists in `docs/omr_review_report.md`.
 - The one-page full-score proof includes Audiveris rhythm warnings, so it is not service-ready.
 - The user-supplied Armenian Sacred Music Project `yegmalian_childrens.pdf` link could not be fetched anonymously; browser-authenticated download may still be useful.
 - Full score-derived organ MIDI playback on the Fantom has not been musically validated in the church-use sense; only the built-in test phrase was sent successfully.

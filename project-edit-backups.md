@@ -75,3 +75,9 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `docs/completion_audit.md` to `backups/completion_audit.md.20260517_transport_metadata_backup` before updating the prompt-to-artifact checklist.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_transport_metadata_backup` before logging transport and metadata backup entries.
 - Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_transport_metadata_backup` before recording transport and metadata verification.
+- Backed up `README.md` to `backups/README.md.20260517_omr_review_report_backup` before documenting OMR review reports.
+- Backed up `docs/omr_workflow.md` to `backups/omr_workflow.md.20260517_omr_review_report_backup` before documenting OMR review reports.
+- Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_omr_review_report_backup` before logging the generated review report.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_omr_review_report_backup` before recording OMR review report verification.
+- Backed up `docs/completion_audit.md` to `backups/completion_audit.md.20260517_omr_review_report_backup` before updating the OMR validation checklist row.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_omr_review_report_backup` before logging OMR review report backup entries.
