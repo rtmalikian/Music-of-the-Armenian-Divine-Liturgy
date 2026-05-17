@@ -98,3 +98,9 @@ Run a known section from `sources/section_manifest.json`:
 ./badarak_venv/bin/python tools/run_section_omr.py khorurt_khorin --dry-run
 ./badarak_venv/bin/python tools/run_section_omr.py khorurt_khorin
 ```
+
+Validate an organ MIDI before Fantom playback:
+
+```bash
+./badarak_venv/bin/python tools/validate_organ_midi.py midi/<name>_organ.mid
+```

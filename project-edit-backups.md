@@ -65,3 +65,6 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `docs/omr_workflow.md` to `backups/omr_workflow.md.20260517_section_runner_backup` before documenting section runner usage.
 - Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_section_runner_backup` before recording the section runner addition.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_section_runner_backup` before logging section-runner backup entries.
+- Backed up `README.md` to `backups/README.md.20260517_midi_validator_backup` before documenting organ MIDI validation.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_midi_validator_backup` before recording the organ MIDI validator.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_midi_validator_backup` before logging validator backup entries.

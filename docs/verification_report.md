@@ -58,6 +58,7 @@ Date: 2026-05-17
 - Verified Roland Fantom USB MIDI test phrase:
   - Command: `./badarak_venv/bin/python -m badarak_player.player test-phrase --port "FANTOM-6 7 8 MIDI OUT 1"`
   - Result: `Played test phrase on FANTOM-6 7 8 MIDI OUT 1`
+- Added `tools/validate_organ_midi.py` to verify generated organ MIDI files are one-track, channel-constrained, and include the expected organ program change.
 
 ## Pending / Requires Network or Hardware
 
