@@ -23,6 +23,7 @@ Date: 2026-05-17
 - Verified `sources/hrashapar.pdf` and `sources/vor-uzshnorhus.pdf` are MuseScore vector PDFs with no embedded raster page images, making them stronger OMR candidates than the scanned `sources/unduryalt.pdf`.
 - Generated `midi/test_organ_excerpt.mid` as a single-track proof-of-concept MIDI file.
 - Verified MIDI port listing outside the sandbox. Available ports at verification time: `Akai Network - DAW Control`, `Akai Network - MIDI`.
+- Identified Armenian Sacred Music Project as a full-liturgy candidate lead, but did not promote it as the production source because it is outside the original official source constraint and needs rights/access review.
 
 ## Pending / Requires Network or Hardware
 

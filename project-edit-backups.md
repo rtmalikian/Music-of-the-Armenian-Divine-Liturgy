@@ -23,3 +23,6 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `.gitignore` to `backups/gitignore.20260517_test_midi_allow_backup` before allowing the generated proof-of-concept MIDI fixture into version control.
 - Backed up `README.md` to `backups/README.md.20260517_github_url_backup` before adding the GitHub repository URL.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_github_url_backup` before logging the GitHub URL documentation backup.
+- Backed up `docs/source_citations.md` to `backups/source_citations.md.20260517_full_liturgy_candidate_backup` before adding full-liturgy candidate leads.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_full_liturgy_candidate_backup` before recording the full-liturgy candidate status.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_full_liturgy_candidate_backup` before logging full-liturgy candidate backup entries.

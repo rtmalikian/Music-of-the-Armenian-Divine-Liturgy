@@ -41,6 +41,16 @@ Research date: 2026-05-17
    - Use: Best current official score candidates for the score-to-MIDI proof-of-concept path.
    - Limitation: These are excerpts/special-music pieces, not the full Divine Liturgy. They are suitable for testing the OMR and playback workflow only.
 
+## Full-Liturgy Candidate Leads
+
+These leads appear to contain entire Divine Liturgy publications, but they are not yet promoted as the production source because they are outside the original official Diocese/St. Nersess source constraint or require follow-up access/rights review.
+
+1. Armenian Sacred Music Project library
+   - URL: https://sacred-music.org/library-%D5%A3%D6%80%D5%A1%D5%A4%D5%A1%D6%80%D5%A1%D5%B6/
+   - Evidence: The library page lists full liturgy publications, including Khorenian `Divine Liturgy (1999 - AACCA)` and Yegmalian `C Major`, `D Major`, and `F Major` publications.
+   - Use: Candidate lead for locating an entire Divine Liturgy score if official Diocese/St. Nersess paths do not expose a complete downloadable score.
+   - Limitation: The linked files are hosted through SharePoint/HathiTrust/MuseScore and need separate access, copyright, and source-eligibility review before use.
+
 ## Current Source Decision
 
 The strongest official path for score-related material is the Eastern Diocese Sacred Music Council site, starting with the Holy Badarak hub and the Episcopal Badarak special-music score links. The St. Nersess PDFs are useful for liturgical text alignment but are not sufficient as organ-score source material.
