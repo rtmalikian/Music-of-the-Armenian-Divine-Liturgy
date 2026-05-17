@@ -24,13 +24,13 @@ The implementation is intentionally separate from `music_script_python/`. That f
 ./badarak_venv/bin/python -m pip install -r requirements.txt
 ```
 
-Audiveris is the recommended open-source OMR tool for scanned score PDFs. Homebrew currently does not provide an `audiveris` formula on this machine, so install from the official Audiveris release channel:
+Audiveris is the recommended open-source OMR tool for scanned score PDFs. Homebrew currently does not provide an `audiveris` formula on this machine. Audiveris 5.10.2 was installed from the official macOS Apple Silicon DMG:
 
 ```bash
-open https://github.com/Audiveris/audiveris/releases
+/Applications/Audiveris.app/Contents/MacOS/Audiveris -version
 ```
 
-Download the Apple Silicon macOS DMG when available, install the app, then verify from the app UI or CLI wrapper if one is installed.
+The official release source is https://github.com/Audiveris/audiveris/releases/tag/5.10.2.
 
 ## Basic MIDI Workflow
 

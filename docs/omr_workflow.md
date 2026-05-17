@@ -2,17 +2,32 @@
 
 Author: Raphael Malikian <rtmalikian@gmail.com>
 
-Recommended OMR tool: Audiveris.
+Recommended OMR tool: Audiveris 5.10.2.
 
 Reason: Audiveris remains the most mature open-source optical music recognition tool for printed score PDFs/images and can export MusicXML, which can then be converted or cleaned into MIDI.
 
 ## Install
 
 ```bash
-open https://github.com/Audiveris/audiveris/releases
+/Applications/Audiveris.app/Contents/MacOS/Audiveris -version
 ```
 
-Homebrew was checked on 2026-05-17 and did not provide an `audiveris` formula. Use the official GitHub release page and download the current macOS Apple Silicon DMG when available. Record the installed version and launch path in `docs/verification_report.md`.
+Homebrew was checked on 2026-05-17 and did not provide an `audiveris` formula. Audiveris was installed from the official GitHub macOS Apple Silicon DMG:
+
+```bash
+curl -L -o /private/tmp/Audiveris-5.10.2-macosx-arm64.dmg \
+  https://github.com/Audiveris/audiveris/releases/download/5.10.2/Audiveris-5.10.2-macosx-arm64.dmg
+shasum -a 256 /private/tmp/Audiveris-5.10.2-macosx-arm64.dmg
+hdiutil attach /private/tmp/Audiveris-5.10.2-macosx-arm64.dmg -nobrowse -readonly
+cp -R /Volumes/Audiveris/Audiveris.app /Applications/Audiveris.app
+hdiutil detach /Volumes/Audiveris
+```
+
+Expected SHA256:
+
+```text
+727c46b4ca4766349be1f582b67cc5aa0d7306113dcf4a18be169d75959f4288
+```
 
 ## Processing Steps
 

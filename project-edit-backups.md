@@ -30,3 +30,10 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `docs/source_citations.md` to `backups/source_citations.md.20260517_source_audit_script_backup` before documenting the machine-readable source manifest.
 - Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_source_audit_script_backup` before recording the source audit script.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_source_audit_script_backup` before logging source audit backups.
+- Backed up `README.md` to `backups/README.md.20260517_audiveris_installed_backup` before recording the verified Audiveris install path.
+- Backed up `docs/omr_workflow.md` to `backups/omr_workflow.md.20260517_audiveris_installed_backup` before replacing the generic Audiveris install notes with the actual 5.10.2 install commands.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_audiveris_installed_backup` before recording the installed Audiveris version and SHA256.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_audiveris_installed_backup` before logging Audiveris install backup entries.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_omr_smoke_backup` before recording the Hrashapar OMR-to-MIDI smoke test.
+- Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_omr_smoke_backup` before recording the Hrashapar OMR validation status.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_omr_smoke_backup` before logging OMR smoke-test backup entries.
