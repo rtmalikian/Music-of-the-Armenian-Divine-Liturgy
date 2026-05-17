@@ -87,3 +87,8 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `docs/completion_audit.md` to `backups/completion_audit.md.20260517_khorurt_batch_backup` before updating the completion audit.
 - Backed up `README.md` to `backups/README.md.20260517_khorurt_batch_backup` before documenting the Khorurt khorin section outputs.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_khorurt_batch_backup` before logging Khorurt batch backup entries.
+- Backed up `sources/section_manifest.json` to `backups/section_manifest.json.20260517_khorurt_fantom_playback_backup` before recording Khorurt khorin Fantom playback.
+- Backed up `docs/validation_log.md` to `backups/validation_log.md.20260517_khorurt_fantom_playback_backup` before logging Khorurt khorin Fantom playback.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_khorurt_fantom_playback_backup` before recording Khorurt khorin Fantom playback verification.
+- Backed up `docs/completion_audit.md` to `backups/completion_audit.md.20260517_khorurt_fantom_playback_backup` before updating the playback audit.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_khorurt_fantom_playback_backup` before logging Fantom playback backup entries.

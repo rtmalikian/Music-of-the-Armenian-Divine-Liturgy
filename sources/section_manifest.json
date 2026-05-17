@@ -12,12 +12,12 @@
     "meter": "unverified",
     "mode_or_key": "unverified",
     "voicing": "three-part male choir",
-    "validation_status": "raw_omr_needs_correction",
-    "status": "omr_batch_exported",
+    "validation_status": "playback_path_verified_needs_correction",
+    "status": "raw_omr_playback_tested",
     "omr_output": "omr/khorurt_khorin/armenianmusic-candidate.mxl",
     "organ_midi_output": "midi/khorurt_khorin_organ.mid",
     "review_report": "docs/omr_review_report_khorurt_khorin.md",
-    "notes": "PDF sheet 55 corresponds to printed score page 1 based on pdftotext inspection. Full range inferred from table of contents where the next section begins on score page 9. Audiveris exported sheets 55-62 on 2026-05-17; output is raw OMR and requires manual correction before service use."
+    "notes": "PDF sheet 55 corresponds to printed score page 1 based on pdftotext inspection. Full range inferred from table of contents where the next section begins on score page 9. Audiveris exported sheets 55-62 on 2026-05-17; the raw organ MIDI completed playback through FANTOM-6 7 8 MIDI OUT 1. Output still requires manual correction before service use."
   },
   {
     "id": "hays_hark",

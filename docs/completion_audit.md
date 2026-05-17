@@ -21,7 +21,7 @@ Objective: implement `prompt.md` as a local toolchain for sourcing Armenian Divi
 | Store per-section metadata | `sources/section_manifest.json` stores title, source page range, PDF sheet range, tempo, meter, mode/key, voicing, and validation status. Unknown musical fields are explicitly `unverified`. | Implemented |
 | Build repeatable OMR-to-organ wrapper | `tools/omr_to_organ_midi.py` runs Audiveris, converts MXL to MIDI, and flattens to one organ track. | Implemented |
 | Build Roland Fantom USB MIDI player | `badarak_player/player.py` supports list-ports, test-phrase, play, `--start-seconds`, patch/program selection, and all-notes-off cleanup. | Implemented |
-| Verify MIDI ports and Fantom | `list-ports` saw Fantom ports; `test-phrase` completed on `FANTOM-6 7 8 MIDI OUT 1`. | Implemented |
+| Verify MIDI ports and Fantom | `list-ports` saw Fantom ports; `test-phrase` and the generated `midi/khorurt_khorin_organ.mid` completed on `FANTOM-6 7 8 MIDI OUT 1`. | Implemented |
 | Document setup and usage | `README.md`, `docs/omr_workflow.md`, `docs/source_citations.md`, and `docs/verification_report.md`. | Implemented |
 | Keep copyrighted PDFs local-only | `.gitignore` excludes `sources/*.pdf`, OMR outputs, generated score MIDI, venv, and backups. | Implemented |
 | Backup before editing existing files | `project-edit-backups.md` logs backups. | Implemented |
@@ -33,7 +33,7 @@ Objective: implement `prompt.md` as a local toolchain for sourcing Armenian Divi
 - The generated OMR MIDI has not been manually corrected against the score, although warning checklists now exist in `docs/omr_review_report.md` and `docs/omr_review_report_khorurt_khorin.md`.
 - The one-page full-score proof includes Audiveris rhythm warnings, so it is not service-ready.
 - The user-supplied Armenian Sacred Music Project `yegmalian_childrens.pdf` link could not be fetched anonymously; browser-authenticated download may still be useful.
-- Full score-derived organ MIDI playback on the Fantom has not been musically validated in the church-use sense; only the built-in test phrase was sent successfully.
+- Score-derived organ MIDI playback has been transport-tested on the Fantom for `khorurt_khorin`, but it has not been musically validated in the church-use sense.
 
 ## Current Conclusion
 

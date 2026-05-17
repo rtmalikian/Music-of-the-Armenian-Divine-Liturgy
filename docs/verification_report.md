@@ -78,6 +78,10 @@ Date: 2026-05-17
   - MIDI validation: `./badarak_venv/bin/python tools/validate_organ_midi.py midi/khorurt_khorin_organ.mid`
   - MIDI structure: 1 track, 173.75 seconds, 2,244 note-on events.
   - Review report: `docs/omr_review_report_khorurt_khorin.md`, with 16 OCR, 14 rhythm, and 23 symbol-link checklist items.
+- Verified score-derived section playback over USB MIDI to the Fantom:
+  - Command: `./badarak_venv/bin/python -m badarak_player.player play midi/khorurt_khorin_organ.mid --port "FANTOM-6 7 8 MIDI OUT 1"`
+  - Result: `Played midi/khorurt_khorin_organ.mid on FANTOM-6 7 8 MIDI OUT 1`
+  - Scope: validates the playback transport path for a generated organ MIDI section; it does not validate musical correctness of the raw OMR transcription.
 
 ## Pending / Requires Network or Hardware
 
@@ -85,4 +89,4 @@ Date: 2026-05-17
 - Audiveris is installed but not placed on PATH; invoke it via `/Applications/Audiveris.app/Contents/MacOS/Audiveris`.
 - A full Divine Liturgy score candidate has been identified and downloaded for local-only processing, but it is not from the original Diocese/St. Nersess source preference and rights must be reviewed before redistribution.
 - One 8-page section from the full Divine Liturgy candidate has been OMR-transcribed for workflow testing, but the full 420-page score has not been batch-transcribed or manually corrected.
-- Full score-derived organ MIDI playback on the Fantom has not been musically validated yet; only the short built-in test phrase was sent successfully.
+- Score-derived organ MIDI playback has been transport-tested on the Fantom for one raw section. Musical correctness and service-readiness still require manual correction and listening review.
