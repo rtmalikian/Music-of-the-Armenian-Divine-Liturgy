@@ -8,7 +8,11 @@
     "score_page_end": 8,
     "pdf_sheet_start": 55,
     "pdf_sheet_end": 62,
+    "tempo_bpm": null,
+    "meter": "unverified",
+    "mode_or_key": "unverified",
     "voicing": "three-part male choir",
+    "validation_status": "raw_source_mapped",
     "status": "ready_for_omr_batch",
     "notes": "PDF sheet 55 corresponds to printed score page 1 based on pdftotext inspection. Full range inferred from table of contents where the next section begins on score page 9."
   },
@@ -21,7 +25,11 @@
     "score_page_end": 14,
     "pdf_sheet_start": 63,
     "pdf_sheet_end": 68,
+    "tempo_bpm": null,
+    "meter": "unverified",
+    "mode_or_key": "unverified",
     "voicing": "three-part male choir",
+    "validation_status": "mapped_not_omr_processed",
     "status": "planned",
     "notes": "Range inferred from table of contents: Hays hark starts on score page 9 and Barekhosutyamp starts on score page 15."
   }

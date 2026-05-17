@@ -60,6 +60,8 @@ For sections already mapped in `sources/section_manifest.json`, prefer:
 
 Use `--dry-run` first to confirm the selected sheet range before launching a longer Audiveris batch.
 
+Each section manifest entry should include title, source page range, PDF sheet range, tempo, meter, mode/key, voicing, and validation status. Leave tempo/meter/mode as `unverified` until a human has checked the OMR output against the printed score.
+
 ## Validation Rules
 
 - Do not treat raw OMR output as service-ready.

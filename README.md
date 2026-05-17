@@ -52,6 +52,13 @@ Play a MIDI file to the Roland Fantom:
 ./badarak_venv/bin/python -m badarak_player.player play midi/test_organ_excerpt.mid --port "FANTOM"
 ```
 
+Start partway through a MIDI file during correction or rehearsal:
+
+```bash
+./badarak_venv/bin/python -m badarak_player.player play midi/test_organ_excerpt.mid \
+  --port "FANTOM" --start-seconds 12.5
+```
+
 The default patch is General MIDI Church Organ (`program=19` as a zero-based MIDI program number). For a specific Roland Fantom organ tone, pass explicit bank/program values after confirming them on the Fantom:
 
 ```bash
@@ -98,6 +105,8 @@ Run a known section from `sources/section_manifest.json`:
 ./badarak_venv/bin/python tools/run_section_omr.py khorurt_khorin --dry-run
 ./badarak_venv/bin/python tools/run_section_omr.py khorurt_khorin
 ```
+
+Each manifest entry stores title, source page range, PDF sheet range, tempo, meter, mode/key, voicing, and validation status. Unknown musical metadata is intentionally marked `unverified` until it is checked against the score during MusicXML/MIDI correction.
 
 Validate an organ MIDI before Fantom playback:
 

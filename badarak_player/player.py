@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import sys
 import time
+from collections.abc import Iterator
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -94,7 +95,38 @@ def all_notes_off(output: mido.ports.BaseOutput, channel: int) -> None:
     output.send(mido.Message("control_change", control=64, value=0, channel=channel))
 
 
-def play_midi(midi_path: Path, port_query: str | None, patch: OrganPatch) -> str:
+def iter_timed_messages(
+    midi_file: mido.MidiFile,
+    start_seconds: float = 0.0,
+) -> Iterator[tuple[float, mido.Message]]:
+    """Yield non-meta messages with playback delays from a start time."""
+    if start_seconds < 0:
+        raise ValueError("start_seconds must be 0 or greater")
+
+    tempo = 500000
+    absolute_seconds = 0.0
+    last_emitted_seconds = start_seconds
+    merged_track = mido.merge_tracks(midi_file.tracks)
+
+    for message in merged_track:
+        absolute_seconds += mido.tick2second(message.time, midi_file.ticks_per_beat, tempo)
+        if message.type == "set_tempo":
+            tempo = message.tempo
+            continue
+        if message.is_meta or absolute_seconds < start_seconds:
+            continue
+
+        delay = max(0.0, absolute_seconds - last_emitted_seconds)
+        last_emitted_seconds = absolute_seconds
+        yield delay, message
+
+
+def play_midi(
+    midi_path: Path,
+    port_query: str | None,
+    patch: OrganPatch,
+    start_seconds: float = 0.0,
+) -> str:
     """Play a MIDI file to a selected output port and return the concrete port name."""
     if not midi_path.exists():
         raise FileNotFoundError(midi_path)
@@ -105,9 +137,9 @@ def play_midi(midi_path: Path, port_query: str | None, patch: OrganPatch) -> str
     with mido.open_output(port_name) as output:
         send_patch(output, patch)
         try:
-            for message in midi_file.play():
-                if message.is_meta:
-                    continue
+            for delay, message in iter_timed_messages(midi_file, start_seconds=start_seconds):
+                if delay:
+                    time.sleep(delay)
                 output.send(force_single_channel(message, patch.channel))
         except KeyboardInterrupt:
             all_notes_off(output, patch.channel)
@@ -143,6 +175,12 @@ def build_parser() -> argparse.ArgumentParser:
     play = subparsers.add_parser("play", help="Play a MIDI file.")
     play.add_argument("midi_file", type=Path)
     play.add_argument("--port", default=None, help="Case-insensitive output port match, e.g. FANTOM.")
+    play.add_argument(
+        "--start-seconds",
+        type=float,
+        default=0.0,
+        help="Start playback at this offset in seconds.",
+    )
     add_patch_args(play)
 
     test = subparsers.add_parser("test-phrase", help="Play a short C major test phrase.")
@@ -180,7 +218,7 @@ def main(argv: list[str] | None = None) -> int:
 
     patch = patch_from_args(args)
     if args.command == "play":
-        port_name = play_midi(args.midi_file, args.port, patch)
+        port_name = play_midi(args.midi_file, args.port, patch, start_seconds=args.start_seconds)
         print(f"Played {args.midi_file} on {port_name}")
         return 0
     if args.command == "test-phrase":
@@ -193,4 +231,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
-

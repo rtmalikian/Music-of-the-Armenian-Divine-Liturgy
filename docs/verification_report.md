@@ -59,6 +59,15 @@ Date: 2026-05-17
   - Command: `./badarak_venv/bin/python -m badarak_player.player test-phrase --port "FANTOM-6 7 8 MIDI OUT 1"`
   - Result: `Played test phrase on FANTOM-6 7 8 MIDI OUT 1`
 - Added `tools/validate_organ_midi.py` to verify generated organ MIDI files are one-track, channel-constrained, and include the expected organ program change.
+- Added `--start-seconds` to `badarak_player/player.py` for practical start-at-time playback during correction or rehearsal.
+- Added explicit section metadata fields in `sources/section_manifest.json`: tempo, meter, mode/key, voicing, and validation status.
+- Re-ran implementation checks after the transport/metadata update:
+  - `./badarak_venv/bin/python -m py_compile badarak_player/player.py tools/audit_score_sources.py tools/omr_to_organ_midi.py tools/run_section_omr.py tools/validate_organ_midi.py`
+  - `./badarak_venv/bin/python tools/audit_score_sources.py --require-production`
+  - `./badarak_venv/bin/python tools/run_section_omr.py khorurt_khorin --dry-run`
+  - `./badarak_venv/bin/python tools/validate_organ_midi.py midi/yegmalian_full_page55_wrapper_test_organ.mid`
+  - `./badarak_venv/bin/python -m badarak_player.player play --help`
+  - `./badarak_venv/bin/python -c "from pathlib import Path; import mido; from badarak_player.player import iter_timed_messages; mf=mido.MidiFile('midi/test_organ_excerpt.mid'); msgs=list(iter_timed_messages(mf, start_seconds=0.5)); print(len(msgs)); print(round(msgs[0][0], 3), msgs[0][1].type)"`
 
 ## Pending / Requires Network or Hardware
 

@@ -68,3 +68,10 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `README.md` to `backups/README.md.20260517_midi_validator_backup` before documenting organ MIDI validation.
 - Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_midi_validator_backup` before recording the organ MIDI validator.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_midi_validator_backup` before logging validator backup entries.
+- Backed up `badarak_player/player.py` to `backups/player.py.20260517_transport_backup` before adding start-at-time playback.
+- Backed up `sources/section_manifest.json` to `backups/section_manifest.json.20260517_metadata_backup` before adding explicit section metadata fields.
+- Backed up `README.md` to `backups/README.md.20260517_transport_metadata_backup` before documenting transport and metadata updates.
+- Backed up `docs/omr_workflow.md` to `backups/omr_workflow.md.20260517_transport_metadata_backup` before documenting section metadata rules.
+- Backed up `docs/completion_audit.md` to `backups/completion_audit.md.20260517_transport_metadata_backup` before updating the prompt-to-artifact checklist.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_transport_metadata_backup` before logging transport and metadata backup entries.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_transport_metadata_backup` before recording transport and metadata verification.
