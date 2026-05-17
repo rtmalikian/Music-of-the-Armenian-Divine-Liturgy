@@ -54,6 +54,7 @@ Date: 2026-05-17
 - Verified the wrapper on sheet 55 of the full Yegmalian candidate outside the sandbox.
   - Output: `midi/yegmalian_full_page55_wrapper_test_organ.mid`
   - MIDI check: 1 track, 14.75 seconds.
+- Added `tools/run_section_omr.py` to execute mapped sections from `sources/section_manifest.json` by section id.
 - Verified Roland Fantom USB MIDI test phrase:
   - Command: `./badarak_venv/bin/python -m badarak_player.player test-phrase --port "FANTOM-6 7 8 MIDI OUT 1"`
   - Result: `Played test phrase on FANTOM-6 7 8 MIDI OUT 1`

@@ -91,3 +91,10 @@ Run a one-page OMR-to-organ-MIDI test from the selected full score:
 ```
 
 The generated score-derived files remain local-only under ignored `omr/` and `midi/` paths until rights and musical validation are complete.
+
+Run a known section from `sources/section_manifest.json`:
+
+```bash
+./badarak_venv/bin/python tools/run_section_omr.py khorurt_khorin --dry-run
+./badarak_venv/bin/python tools/run_section_omr.py khorurt_khorin
+```

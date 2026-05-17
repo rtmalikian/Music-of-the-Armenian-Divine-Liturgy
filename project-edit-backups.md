@@ -61,3 +61,7 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_fantom_test_backup` before logging Fantom test backup entries.
 - Backed up `.gitignore` from `HEAD` to `backups/gitignore.20260517_section_manifest_backup` while adding `sources/section_manifest.json` to the committed source manifests.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_section_manifest_backup` before logging section-manifest backup entries.
+- Backed up `README.md` to `backups/README.md.20260517_section_runner_backup` before documenting the section-level OMR runner.
+- Backed up `docs/omr_workflow.md` to `backups/omr_workflow.md.20260517_section_runner_backup` before documenting section runner usage.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_section_runner_backup` before recording the section runner addition.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_section_runner_backup` before logging section-runner backup entries.

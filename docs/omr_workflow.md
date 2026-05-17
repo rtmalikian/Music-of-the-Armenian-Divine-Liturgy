@@ -51,6 +51,15 @@ For a repeatable proof-of-concept run against selected sheets:
 
 This wrapper runs Audiveris, converts the exported MXL to MIDI, and flattens the result to one organ track.
 
+For sections already mapped in `sources/section_manifest.json`, prefer:
+
+```bash
+./badarak_venv/bin/python tools/run_section_omr.py khorurt_khorin --dry-run
+./badarak_venv/bin/python tools/run_section_omr.py khorurt_khorin
+```
+
+Use `--dry-run` first to confirm the selected sheet range before launching a longer Audiveris batch.
+
 ## Validation Rules
 
 - Do not treat raw OMR output as service-ready.
