@@ -79,3 +79,5 @@ Results:
 Selection rule: use vector PDFs first because they are resolution-independent and avoid scanner DPI loss. If a raster-only PDF must be used, require at least 300 PPI page images where possible; `unduryalt.pdf` is not the strongest candidate because its main grayscale page images are 150 PPI.
 
 Full-liturgy source rule: do not promote any excerpt score as the production source. Production OMR must use an entire Divine Liturgy score PDF. Excerpts can be used only for installation, OMR, and playback tests.
+
+The machine-readable candidate list is `sources/source_candidates.json`. Run `tools/audit_score_sources.py --require-production` before any production OMR job; it must fail unless at least one candidate is both `full_divine_liturgy: true` and technically suitable.

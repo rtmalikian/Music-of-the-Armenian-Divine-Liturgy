@@ -24,6 +24,7 @@ Date: 2026-05-17
 - Generated `midi/test_organ_excerpt.mid` as a single-track proof-of-concept MIDI file.
 - Verified MIDI port listing outside the sandbox. Available ports at verification time: `Akai Network - DAW Control`, `Akai Network - MIDI`.
 - Identified Armenian Sacred Music Project as a full-liturgy candidate lead, but did not promote it as the production source because it is outside the original official source constraint and needs rights/access review.
+- Added `tools/audit_score_sources.py` and `sources/source_candidates.json` to prevent excerpt/test PDFs from being promoted as production OMR inputs.
 
 ## Pending / Requires Network or Hardware
 

@@ -26,3 +26,7 @@ Author: Raphael Malikian <rtmalikian@gmail.com>
 - Backed up `docs/source_citations.md` to `backups/source_citations.md.20260517_full_liturgy_candidate_backup` before adding full-liturgy candidate leads.
 - Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_full_liturgy_candidate_backup` before recording the full-liturgy candidate status.
 - Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_full_liturgy_candidate_backup` before logging full-liturgy candidate backup entries.
+- Backed up `README.md` to `backups/README.md.20260517_source_audit_script_backup` before documenting the production source audit command.
+- Backed up `docs/source_citations.md` to `backups/source_citations.md.20260517_source_audit_script_backup` before documenting the machine-readable source manifest.
+- Backed up `docs/verification_report.md` to `backups/verification_report.md.20260517_source_audit_script_backup` before recording the source audit script.
+- Backed up `project-edit-backups.md` to `backups/project-edit-backups.md.20260517_source_audit_script_backup` before logging source audit backups.

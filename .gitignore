@@ -11,6 +11,7 @@ sources/*.tiff
 sources/*.png
 sources/*.jpg
 sources/*.jpeg
+!sources/source_candidates.json
 omr/*
 !omr/.gitkeep
 midi/*.mid

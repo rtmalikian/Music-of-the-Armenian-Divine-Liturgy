@@ -72,3 +72,11 @@ For OMR, prefer vector PDFs over scanned raster PDFs. The current official Sacre
 - `sources/unduryalt.pdf`: scanned/Canon PDF, 2 pages, 150 PPI grayscale page images plus 300 PPI stencils. Lower priority unless a better source is found.
 
 These three files are excerpts/special-music test fixtures only. The production source must be an entire Divine Liturgy score PDF. If a later official full-liturgy PDF is found, compare it the same way before selecting it for score-to-MIDI.
+
+Run the source audit before any production OMR run:
+
+```bash
+./badarak_venv/bin/python tools/audit_score_sources.py --require-production
+```
+
+This command intentionally fails until `sources/source_candidates.json` contains a real, locally present, full Divine Liturgy score candidate with either vector notation or raster page images at 300 PPI or better.

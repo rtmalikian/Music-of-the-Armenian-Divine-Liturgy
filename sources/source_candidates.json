@@ -1,0 +1,29 @@
+[
+  {
+    "id": "hrashapar",
+    "title": "Hrashapar",
+    "path": "sources/hrashapar.pdf",
+    "source_url": "https://armenianchurchmusic.org/e-sharagan/episcopal-badarak",
+    "source_type": "official_excerpt",
+    "full_divine_liturgy": false,
+    "use": "workflow_test_only"
+  },
+  {
+    "id": "vor_uzshnorhus",
+    "title": "Vor uzShnorhus",
+    "path": "sources/vor-uzshnorhus.pdf",
+    "source_url": "https://armenianchurchmusic.org/e-sharagan/episcopal-badarak",
+    "source_type": "official_excerpt",
+    "full_divine_liturgy": false,
+    "use": "workflow_test_only"
+  },
+  {
+    "id": "unduryalt",
+    "title": "Unduryalt",
+    "path": "sources/unduryalt.pdf",
+    "source_url": "https://armenianchurchmusic.org/e-sharagan/episcopal-badarak",
+    "source_type": "official_excerpt",
+    "full_divine_liturgy": false,
+    "use": "workflow_test_only"
+  }
+]
