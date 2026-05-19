@@ -19,6 +19,10 @@ def pdf_sheets(pages: list[int], offset: int) -> str:
     return ", ".join(str(page + offset) for page in pages)
 
 
+def markdown_table_cell(value: Any) -> str:
+    return str(value).replace("|", r"\|")
+
+
 def render_markdown(index: dict[str, Any]) -> str:
     offset = int(index["pdf_sheet_offset_for_primary_score_pages"])
     lines = [
@@ -37,10 +41,10 @@ def render_markdown(index: dict[str, Any]) -> str:
         lines.append(
             "| {number} | `{id}` | {title} | {pages} | {sheets} |".format(
                 number=chant["number"],
-                id=chant["id"],
-                title=chant["title"],
-                pages=page_text,
-                sheets=pdf_sheets(pages, offset),
+                id=markdown_table_cell(chant["id"]),
+                title=markdown_table_cell(chant["title"]),
+                pages=markdown_table_cell(page_text),
+                sheets=markdown_table_cell(pdf_sheets(pages, offset)),
             )
         )
     lines.append("")
